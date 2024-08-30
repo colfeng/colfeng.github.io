@@ -1,14 +1,13 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-About me
-======
+
 Welcome to my homepage! I am Duanyu Feng (冯端宇), a PhD student at the School of Computer Science, Sichuan University, under the supervision of Prof. Wenqiang Lie.
 
 My research delves into the theoretical foundations of deep learning and machine learning. Furthermore, I'm exploring how tools from numerical optimization and natural language processing can be used to create a more reliable and robust scientific algorithm for addressing social issues.
