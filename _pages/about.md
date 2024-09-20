@@ -35,21 +35,32 @@ Selected Awards
 Selected Publications
 ======
 ### Year 2024 ###
+1. **Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English**
+   <br>
+   Xiao Zhang, Ruoyu Xiang, Chenhan Yuan, **Duanyu Feng**, Weiguang Han, Alejandro Lopez-Lira, Xiao-Yang Liu, Meikang Qiu, Sophia Ananiadou, Min Peng, Jimin Huang, Qianqian Xie.
+   <br>
+   **KDD 2024 (Long Paper, CCF-A)**
+   <br>
+   [Paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671554)
 <!--
-1. 
 1. 
 -->
 
 Professional Experience
 ======
 ### Year 2024 ###
+1. IJCAI 2024, FinNLP-AgentScen Workshop, shared task organizer of the Financial Challenges in Large Language Models.
 <!--
 1. IJCAI 2024, FinNLP-AgentScen Workshop, shared task organizer of the Financial Challenges in Large Language Models.
 -->
 
 ### Year 2023 ###
+1. **Internship**
+   <br>
+   Beijing Academy of Artificial Intelligence, Data Research Group
+   <br>
+   work on data analysis for alignment of large language models.
 <!--
-1. Beijing Academy of Artificial Intelligence, Data Research Group, working on data analysis for alignment of large language models (Internship).
 -->
 
 
