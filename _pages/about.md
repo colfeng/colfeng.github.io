@@ -42,17 +42,13 @@ Selected Publications
    **KDD 2024 (Long Paper, CCF-A)**
    <br>
    [Paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671554)
-<!--
-1. 
--->
+
 
 Professional Experience
 ======
 ### Year 2024 ###
 1. IJCAI 2024, FinNLP-AgentScen Workshop, shared task organizer of the Financial Challenges in Large Language Models.
-<!--
-1. IJCAI 2024, FinNLP-AgentScen Workshop, shared task organizer of the Financial Challenges in Large Language Models.
--->
+
 
 ### Year 2023 ###
 1. **Internship**
@@ -60,7 +56,5 @@ Professional Experience
    Beijing Academy of Artificial Intelligence, Data Research Group
    <br>
    work on data analysis for alignment of large language models.
-<!--
--->
 
 
