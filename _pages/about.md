@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Welcome to my homepage! I am Duanyu Feng (冯端宇), a PhD student at the School of Computer Science, Sichuan University, under the supervision of Prof. Wenqiang Lie.
+Welcome to my homepage! I am Duanyu Feng (冯端宇), a PhD student at the School of Computer Science, Sichuan University, under the supervision of Prof. Wenqiang Lei.
 
 My research delves into the theoretical foundations of deep learning and machine learning. Furthermore, I'm exploring how tools from numerical optimization and natural language processing can be used to create a more reliable and robust scientific algorithm for addressing social issues.
 
@@ -43,6 +43,14 @@ Selected Publications
    <br>
    [Paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671554)
 
+1. **Towards analyzing and understanding the limitations of dpo: A theoretical perspective**
+   <br>
+   **Duanyu Feng**, Bowen Qin, Chen Huang, Zheng Zhang, Wenqiang Lei.
+   <br>
+   **Preprint** (Although the method of this paper is simple and has not been officially published, I think it is the most interesting work I have done this year.
+)
+   <br>
+   [Paper](https://arxiv.org/pdf/2404.04626)
 
 Professional Experience
 ======
