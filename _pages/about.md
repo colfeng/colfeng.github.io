@@ -47,7 +47,7 @@ Selected Publications
    <br>
    **Duanyu Feng**, Bowen Qin, Chen Huang, Zheng Zhang, Wenqiang Lei.
    <br>
-   **Preprint** (Although the method of this paper is simple and has not been officially published, I think it is the most interesting work I have done this year.
+   **Preprint** (Although this paper is simple and has not been officially published, I think it is the most interesting work I have done this year.
 )
    <br>
    [Paper](https://arxiv.org/pdf/2404.04626)
