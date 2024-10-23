@@ -52,6 +52,23 @@ Selected Publications
    <br>
    [Paper](https://arxiv.org/pdf/2404.04626)
 
+1. **HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection**
+   <br>
+   Yuxin Wang, **Duanyu Feng**, Yongfu Dai, Zhengyu Chen, Jimin Huang, Sophia Ananiadou, Qianqian Xie, Hao Wang.
+   <br>
+   **NeurIPS 2024 (Long Paper, CCF-A**, under my guidance)
+   <br>
+   [stay tuned]
+
+
+1. **The finben: An holistic financial benchmark for large language models**
+   <br>
+   Qianqian Xie, Weiguang Han, Zhengyu Chen, Ruoyu Xiang, Xiao Zhang, Yueru He, Mengxi Xiao, Dong Li, Yongfu Dai, **Duanyu Feng**, Yijing Xu, Haoqiang Kang, Ziyan Kuang, Chenhan Yuan, Kailai Yang, Zheheng Luo, Tianlin Zhang, Zhiwei Liu, Guojun Xiong, Zhiyang Deng, Yuechen Jiang, Zhiyuan Yao, Haohang Li, Yangyang Yu, Gang Hu, Jiajia Huang, Xiao-Yang Liu, Alejandro Lopez-Lira, Benyou Wang, Yanzhao Lai, Hao Wang, Min Peng, Sophia Ananiadou, Jimin Huang.
+   <br>
+   **NeurIPS 2024 (Long Paper, CCF-A)** 
+   <br>
+   [stay tuned]
+
 Professional Experience
 ======
 ### Year 2024 ###
