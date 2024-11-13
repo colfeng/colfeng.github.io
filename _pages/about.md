@@ -73,7 +73,7 @@ Professional Experience
 ======
 ### Year 2024 ###
 1. IJCAI 2024, FinNLP-AgentScen Workshop, shared task organizer of the Financial Challenges in Large Language Models.
-
+1. COLING 2025, The joint workshop of FinNLP, FNP, and LLMFinLegal, program committee member.
 
 ### Year 2023 ###
 1. **Internship**
