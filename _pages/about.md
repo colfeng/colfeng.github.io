@@ -34,15 +34,22 @@ Selected Awards
 
 Selected Publications
 ======
-### Year 2024 ###
-1. **Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English**
-   <br>
-   Xiao Zhang, Ruoyu Xiang, Chenhan Yuan, **Duanyu Feng**, Weiguang Han, Alejandro Lopez-Lira, Xiao-Yang Liu, Meikang Qiu, Sophia Ananiadou, Min Peng, Jimin Huang, Qianqian Xie.
-   <br>
-   **KDD 2024 (Long Paper, CCF-A)**
-   <br>
-   [Paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671554)
+### Year 2025 ###
+#### Method/Theory for LLM ####
 
+
+#### LLM for Application ####
+ 1. **LAiW: A Chinese Legal Large Language Models Benchmark**
+    <br>
+    Yongfu Dai, **Duanyu Feng**, Jimin Huang, Haochen Jia, Qianqian Xie, Yifang Zhang, Weiguang Han, Wei Tian, Hao Wang
+    <br>
+    **COLING 2025 (Long Paper, CCF-B**, under my guidance)
+    <br>
+   [stay tuned]
+
+
+### Year 2024 ###
+#### Method/Theory for LLM ####
 1. **Towards analyzing and understanding the limitations of dpo: A theoretical perspective**
    <br>
    **Duanyu Feng**, Bowen Qin, Chen Huang, Zheng Zhang, Wenqiang Lei.
@@ -58,16 +65,25 @@ Selected Publications
    <br>
    **NeurIPS 2024 (Long Paper, CCF-A**, under my guidance)
    <br>
-   [stay tuned]
+   [Paper](https://neurips.cc/virtual/2024/poster/97571)
+
+#### LLM for Application ####
+1. **Dólares or Dollars? Unraveling the Bilingual Prowess of Financial LLMs Between Spanish and English**
+   <br>
+   Xiao Zhang, Ruoyu Xiang, Chenhan Yuan, **Duanyu Feng**, Weiguang Han, Alejandro Lopez-Lira, Xiao-Yang Liu, Meikang Qiu, Sophia Ananiadou, Min Peng, Jimin Huang, Qianqian Xie.
+   <br>
+   **KDD 2024 (Long Paper, CCF-A)**
+   <br>
+   [Paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671554)
 
 
-1. **The finben: An holistic financial benchmark for large language models**
+1. **FinBen: An Holistic Financial Benchmark for Large Language Models**
    <br>
    Qianqian Xie, Weiguang Han, Zhengyu Chen, Ruoyu Xiang, Xiao Zhang, Yueru He, Mengxi Xiao, Dong Li, Yongfu Dai, **Duanyu Feng**, Yijing Xu, Haoqiang Kang, Ziyan Kuang, Chenhan Yuan, Kailai Yang, Zheheng Luo, Tianlin Zhang, Zhiwei Liu, Guojun Xiong, Zhiyang Deng, Yuechen Jiang, Zhiyuan Yao, Haohang Li, Yangyang Yu, Gang Hu, Jiajia Huang, Xiao-Yang Liu, Alejandro Lopez-Lira, Benyou Wang, Yanzhao Lai, Hao Wang, Min Peng, Sophia Ananiadou, Jimin Huang.
    <br>
    **NeurIPS 2024 (Long Paper, CCF-A)** 
    <br>
-   [stay tuned]
+   [Paper](https://neurips.cc/virtual/2024/poster/97525)
 
 Professional Experience
 ======
