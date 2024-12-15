@@ -36,7 +36,13 @@ Selected Publications
 ======
 ### Year 2025 ###
 #### Method/Theory for LLM ####
-
+ 1. **Legend: Leveraging Representation Engineering to Annotate Safety Margin for Preference Datasets**
+    <br>
+    **Duanyu Feng**, Bowen Qin, Chen Huang, Youcheng Huang, Zheng Zhang, Wenqiang Lei
+    <br>
+    **AAAI 2025 (Long Paper, CCF-A)**
+    <br>
+   [stay tuned]
 
 #### LLM for Application ####
  1. **LAiW: A Chinese Legal Large Language Models Benchmark**
