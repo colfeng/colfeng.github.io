@@ -54,7 +54,7 @@ Selected Publications
    [stay tuned]
  1. **UCL-Bench: A Chinese User-Centric Legal Benchmark for Large Language Models**
     <br>
-    Ruoli Gan*, **Duanyu Feng***, Chen Zhang, Zhihang Lin, Haochen Jia, Hao Wang, Zhenyang Cai, Lei Cui, Qianqian Xie, Jimin Huang, Benyou Wang
+    Ruoli Gan\*, **Duanyu Feng**\*, Chen Zhang, Zhihang Lin, Haochen Jia, Hao Wang, Zhenyang Cai, Lei Cui, Qianqian Xie, Jimin Huang, Benyou Wang
     <br>
     **NAACL 2025 (Findings, Long Paper, CCF-B**, cofirst authors)
     <br>
