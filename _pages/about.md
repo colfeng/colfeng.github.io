@@ -40,7 +40,14 @@ Selected Publications
     <br>
     **Duanyu Feng**, Bowen Qin, Chen Huang, Youcheng Huang, Zheng Zhang, Wenqiang Lei
     <br>
-    **AAAI 2025 (Long Paper, CCF-A)**
+    **AAAI 2025 (Long Paper, CCF-A**, first author)
+    <br>
+   [paper](https://ojs.aaai.org/index.php/AAAI/article/view/34937)
+2. **Cross-model Transferability among Large Language Models on the Platonic Representations of Concepts**
+    <br>
+    Youcheng Huang, Chen Huang, **Duanyu Feng**, Wenqiang Lei, Jiancheng Lv
+    <br>
+    **ACL 2025 (Long Paper, CCF-A)**
     <br>
    [stay tuned]
 
@@ -51,14 +58,14 @@ Selected Publications
     <br>
     **COLING 2025 (Long Paper, CCF-B**, under my guidance)
     <br>
-   [stay tuned]
+   [paper](https://aclanthology.org/2025.coling-main.716/)
  1. **UCL-Bench: A Chinese User-Centric Legal Benchmark for Large Language Models**
     <br>
     Ruoli Gan\*, **Duanyu Feng**\*, Chen Zhang, Zhihang Lin, Haochen Jia, Hao Wang, Zhenyang Cai, Lei Cui, Qianqian Xie, Jimin Huang, Benyou Wang
     <br>
     **NAACL 2025 (Findings, Long Paper, CCF-B**, cofirst authors)
     <br>
-   [stay tuned]
+   [paper](https://aclanthology.org/2025.findings-naacl.444/)
 
 
 ### Year 2024 ###
