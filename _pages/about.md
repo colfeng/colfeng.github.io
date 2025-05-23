@@ -107,6 +107,13 @@ Selected Publications
 
 Professional Experience
 ======
+### Year 2025 ###
+1. **Exchange Student**
+   <br>
+   National University of Singapore, Cancer Science Institute of Singapore
+   <br>
+   work on the module construction for RNA large language models.
+   
 ### Year 2024 ###
 1. IJCAI 2024, FinNLP-AgentScen Workshop, shared task organizer of the Financial Challenges in Large Language Models.
 1. COLING 2025, The joint workshop of FinNLP, FNP, and LLMFinLegal, program committee member.
