@@ -17,6 +17,15 @@ Specifically, my research lies in the span of the following topics:
 - Alignment of Large Language Models
 - Applications of Large Language Models in Legal, Medical, and Financial Industries
 
+Bio:
+======
+Sep. 2023 - Present: Ph.D at Sichuan University, supervised by [Prof.  Wenqiang Lei](https://sites.google.com/view/wenqianghome/home).
+
+Sep. 2020 - Jun. 2023: M.S at Sichuan University, supervised by [Prof. Bing Hu](https://math.scu.edu.cn/info/1252/2507.htm) (with [Prof. Hao Wang](https://math.scu.edu.cn/info/1252/2489.htm) and [Prof. Shiquan Zhang](https://math.scu.edu.cn/info/1252/2525.htm)). 
+
+Sep. 2016 - Jun. 2020: B.S at Sichuan University, supervised by [Prof. Hao Wang](https://math.scu.edu.cn/info/1252/2489.htm).
+
+
 <!--
 News
 ======
