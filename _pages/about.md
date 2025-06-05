@@ -17,7 +17,7 @@ Specifically, my research lies in the span of the following topics:
 - Alignment of Large Language Models
 - Applications of Large Language Models in Legal, Medical, and Financial Industries
 
-Bio:
+Bio
 ======
 Sep. 2023 - Present: Ph.D at Sichuan University, supervised by [Prof.  Wenqiang Lei](https://sites.google.com/view/wenqianghome/home).
 
