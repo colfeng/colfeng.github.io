@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Welcome to my homepage! I am Duanyu Feng (冯端宇), a PhD student at the School of Computer Science, Sichuan University, under the supervision of Prof. Wenqiang Lei.
+Welcome to my homepage! I am Duanyu Feng (冯端宇), a PhD student at the School of Computer Science, Sichuan University, under the supervision of [Prof. Wenqiang Lei](https://sites.google.com/view/wenqianghome/home).
 
 My research delves into the theoretical foundations of deep learning and machine learning. Furthermore, I'm exploring how tools from numerical optimization and natural language processing can be used to create a more reliable and robust scientific algorithm for addressing social issues.
 
@@ -19,7 +19,7 @@ Specifically, my research lies in the span of the following topics:
 
 Bio
 ======
-Sep. 2023 - Present: Ph.D at School of Computer Science, Sichuan University, supervised by [Prof.  Wenqiang Lei](https://sites.google.com/view/wenqianghome/home).
+Sep. 2023 - Present: Ph.D at School of Computer Science, Sichuan University, supervised by [Prof. Wenqiang Lei](https://sites.google.com/view/wenqianghome/home).
 
 Sep. 2020 - Jun. 2023: M.S at School of Mathematics, Sichuan University, supervised by [Prof. Bing Hu](https://math.scu.edu.cn/info/1252/2507.htm) (with [Prof. Hao Wang](https://math.scu.edu.cn/info/1252/2489.htm) and [Prof. Shiquan Zhang](https://math.scu.edu.cn/info/1252/2525.htm)). 
 
@@ -75,7 +75,7 @@ Professional Experience
 ### Year 2025 ###
 1. **Exchange Student**: Cancer Science Institute of Singapore, National University of Singapore.
    <br>
-   work on the module construction for RNA large language models.
+   work on the module construction for RNA large language models, under the supervision of [Prof. Yang Li](https://csi.nus.edu.sg/researcher/yangli/).
 
 ### Year 2024 ###
 1. IJCAI 2024, FinNLP-AgentScen Workshop, **shared task organizer** of the Financial Challenges in Large Language Models.
@@ -84,7 +84,7 @@ Professional Experience
 ### Year 2023 ###
 1. **Internship**: Data Research Group, eijing Academy of Artificial Intelligence.
    <br>
-   work on data analysis for alignment of large language models.
+   work on data analysis for alignment of large language models, under the supervision of [Dr. Zheng Zhang](https://openreview.net/profile?id=~Zheng_Zhang12).
 
 Vistors of this Site
 ======
