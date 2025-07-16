@@ -76,6 +76,7 @@ Professional Experience
 1. **Exchange Student**: Cancer Science Institute of Singapore, National University of Singapore.
    <br>
    work on the module construction for RNA large language models, under the supervision of [Prof. Yang Li](https://csi.nus.edu.sg/researcher/yangli/).
+1. ACL ARR 2025 May **Area Chairs**.
 
 ### Year 2024 ###
 1. IJCAI 2024, FinNLP-AgentScen Workshop, **shared task organizer** of the Financial Challenges in Large Language Models.
