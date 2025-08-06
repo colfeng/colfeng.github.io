@@ -46,8 +46,7 @@ Selected Publications
 **Method/Theory for LLM**
 1. (First author) **Duanyu Feng**, Bowen Qin, Chen Huang, Youcheng Huang, Zheng Zhang, Wenqiang Lei. [Legend: Leveraging Representation Engineering to Annotate Safety Margin for Preference Datasets.](https://ojs.aaai.org/index.php/AAAI/article/view/34937)  **AAAI 2025 (CCF-A)** 
    
-1. Youcheng Huang, Chen Huang, **Duanyu Feng**, Wenqiang Lei, Jiancheng Lv. [Cross-model Transferability among Large Language Models on the Platonic Representations of Concepts.]() **ACL 2025 (Long Paper, CCF-A)**  [stay tuned]
-  
+1. Youcheng Huang, Chen Huang, **Duanyu Feng**, Wenqiang Lei, Jiancheng Lv. [Cross-model Transferability among Large Language Models on the Platonic Representations of Concepts.](https://aclanthology.org/2025.acl-long.185.pdf) **ACL 2025 (Long Paper, CCF-A)**  
 
 **LLM for Application**
  1. (Under my guidance) Yongfu Dai, **Duanyu Feng**, Jimin Huang, Haochen Jia, Qianqian Xie, Yifang Zhang, Weiguang Han, Wei Tian, Hao Wang. [LAiW: A Chinese Legal Large Language Models Benchmark.](https://aclanthology.org/2025.coling-main.716/) **COLING 2025 (Long Paper, CCF-B)**
