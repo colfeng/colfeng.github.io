@@ -42,6 +42,13 @@ Selected Awards
 
 Selected Publications
 ======
+### Year 2026 ###
+**Method/Theory for LLM**
+1. (Under my guidance) Ruibo Deng, **Duanyu Feng**, Wenqiang Lei. [AMaPO: Adaptive Margin-attached Preference Optimization for Language Model Alignment.](https://arxiv.org/abs/2511.09385)  **AAAI 2026 (CCF-A)** 
+
+**AI4Science**
+1. (Cofirst authors) Qinyi Zhang\*, **Duanyu Feng**\*, Ronghui Han, Yangshuai Wang, Hao Wang. [MicroEvoEval: A Systematic Evaluation Framework for Image-Based Microstructure Evolution Prediction.](https://arxiv.org/abs/2511.08955)  **AAAI 2026 (CCF-A)**
+
 ### Year 2025 ###
 **Method/Theory for LLM**
 1. (First author) **Duanyu Feng**, Bowen Qin, Chen Huang, Youcheng Huang, Zheng Zhang, Wenqiang Lei. [Legend: Leveraging Representation Engineering to Annotate Safety Margin for Preference Datasets.](https://ojs.aaai.org/index.php/AAAI/article/view/34937)  **AAAI 2025 (CCF-A)** 
