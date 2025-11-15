@@ -15,6 +15,7 @@ My research delves into the theoretical foundations of deep learning and machine
 Specifically, my research lies in the span of the following topics:
 - Data Synthesis and Data Mining
 - Alignment of Large Language Models
+- AI for Science
 - Applications of Large Language Models in Legal, Medical, and Financial Industries
 
 Bio
@@ -44,7 +45,7 @@ Selected Publications
 ======
 ### Year 2026 ###
 **Method/Theory for LLM**
-1. (Under my guidance) Ruibo Deng, **Duanyu Feng**, Wenqiang Lei. [AMaPO: Adaptive Margin-attached Preference Optimization for Language Model Alignment.](https://arxiv.org/abs/2511.09385)  **AAAI 2026 (CCF-A)** 
+1. (Under my guidance) Ruibo Deng, **Duanyu Feng**, Wenqiang Lei. [AMaPO: Adaptive Margin-attached Preference Optimization for Language Model Alignment.](https://arxiv.org/abs/2511.09385)  **AAAI 2026 Oral (CCF-A)** 
 
 **AI4Science**
 1. (Cofirst authors) Qinyi Zhang\*, **Duanyu Feng**\*, Ronghui Han, Yangshuai Wang, Hao Wang. [MicroEvoEval: A Systematic Evaluation Framework for Image-Based Microstructure Evolution Prediction.](https://arxiv.org/abs/2511.08955)  **AAAI 2026 (CCF-A)**
