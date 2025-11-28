@@ -90,7 +90,7 @@ Professional Experience
 1. IJCAI 2024, FinNLP-AgentScen Workshop, **shared task organizer** of the Financial Challenges in Large Language Models.
 
 ### Year 2023 ###
-1. **Internship**: Data Research Group, eijing Academy of Artificial Intelligence.
+1. **Internship**: Data Research Group, Beijing Academy of Artificial Intelligence.
    <br>
    work on data analysis for alignment of large language models, under the supervision of [Dr. Zheng Zhang](https://openreview.net/profile?id=~Zheng_Zhang12).
 
