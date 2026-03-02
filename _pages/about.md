@@ -50,6 +50,8 @@ Selected Publications
 **AI4Science**
 1. (Cofirst authors) Qinyi Zhang\*, **Duanyu Feng**\*, Ronghui Han, Yangshuai Wang, Hao Wang. [MicroEvoEval: A Systematic Evaluation Framework for Image-Based Microstructure Evolution Prediction.](https://arxiv.org/abs/2511.08955)  **AAAI 2026 (CCF-A)**
 
+2. Yang Li, Chenjie Feng, Xi Zhang, Sho Tsukiyama, **Duanyu Feng**, Yang Zhang. [DRfold2 is a deep learning-based tool that enables efficient and accurate RNA structure prediction.](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659) **PLoS Biology (Nature Index, JCR Q1, IF: 7.2)**
+
 ### Year 2025 ###
 **Method/Theory for LLM**
 1. (First author) **Duanyu Feng**, Bowen Qin, Chen Huang, Youcheng Huang, Zheng Zhang, Wenqiang Lei. [Legend: Leveraging Representation Engineering to Annotate Safety Margin for Preference Datasets.](https://ojs.aaai.org/index.php/AAAI/article/view/34937)  **AAAI 2025 (CCF-A)** 
