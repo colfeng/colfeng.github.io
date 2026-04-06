@@ -81,6 +81,12 @@ Selected Publications
 
 Professional Experience
 ======
+### Year 2026 ###
+1. **Exchange Student**: Cancer Science Institute of Singapore, National University of Singapore.
+   <br>
+   work on the module construction for RNA large language models, under the supervision of [Prof. Yang Li](https://csi.nus.edu.sg/researcher/yangli/).
+1. ACL ARR 2026 January **Area Chairs**.
+
 ### Year 2025 ###
 1. **Exchange Student**: Cancer Science Institute of Singapore, National University of Singapore.
    <br>
