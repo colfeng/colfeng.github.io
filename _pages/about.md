@@ -74,7 +74,7 @@ Selected Publications
 
 ### Others ### 
 1. (First author) **Duanyu Feng**, Li Ding, Hongru Liang, Wenqiang Lei. Advancing Edge Classification through High-Dimensional Causal Modeling of Node-Edge Interplay. **CIKM 2026 (CCF-B)**
-2. 	Xingran Liao, Duanyu Feng, Mingliang Zhou, Sam Kwong, Weisi Lin. Enhancing prompt-image alignment evaluations via cyclic mutual information maximization. **ECCV 2026 (CCF-B)**
+2. 	Xingran Liao, **Duanyu Feng**, Mingliang Zhou, Sam Kwong, Weisi Lin. Enhancing prompt-image alignment evaluations via cyclic mutual information maximization. **ECCV 2026 (CCF-B)**
 
 
 
