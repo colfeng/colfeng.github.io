@@ -52,6 +52,11 @@ Selected Publications
 
 2. Yang Li, Chenjie Feng, Xi Zhang, Sho Tsukiyama, **Duanyu Feng**, Yang Zhang. [DRfold2 is a deep learning-based tool that enables efficient and accurate RNA structure prediction.](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003659) **PLoS Biology (Nature Index, JCR Q1, IF: 7.2)**
 
+**Others**
+1. (First author) **Duanyu Feng**, Li Ding, Hongru Liang, Wenqiang Lei. Advancing Edge Classification through High-Dimensional Causal Modeling of Node-Edge Interplay. **CIKM 2026 (CCF-B)**
+2. 	Xingran Liao, Duanyu Feng, Mingliang Zhou, Sam Kwong, Weisi Lin. Enhancing prompt-image alignment evaluations via cyclic mutual information maximization. **ECCV 2026 (CCF-B)**
+
+
 ### Year 2025 ###
 **Method/Theory for LLM**
 1. (First author) **Duanyu Feng**, Bowen Qin, Chen Huang, Youcheng Huang, Zheng Zhang, Wenqiang Lei. [Legend: Leveraging Representation Engineering to Annotate Safety Margin for Preference Datasets.](https://ojs.aaai.org/index.php/AAAI/article/view/34937)  **AAAI 2025 (CCF-A)** 
