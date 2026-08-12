@@ -80,26 +80,17 @@ Selected Publications
 
 Professional Experience
 ======
-### Year 2026 ###
-1. **Exchange Student**: Cancer Science Institute of Singapore, National University of Singapore.
+1. **Exchange Student (2025-2026)**: Cancer Science Institute of Singapore, National University of Singapore.
    <br>
    work on the module construction for RNA large language models, under the supervision of [Prof. Yang Li](https://csi.nus.edu.sg/researcher/yangli/).
 1. ACL ARR 2026 January **Area Chairs**.
-
-### Year 2025 ###
-1. **Exchange Student**: Cancer Science Institute of Singapore, National University of Singapore.
-   <br>
-   work on the module construction for RNA large language models, under the supervision of [Prof. Yang Li](https://csi.nus.edu.sg/researcher/yangli/).
-1. COLING 2025, The joint workshop of FinNLP, FNP, and LLMFinLegal, **program committee member**.
 1. ACL ARR 2025 May **Area Chairs**.
-
-### Year 2024 ###
+1. COLING 2025, The joint workshop of FinNLP, FNP, and LLMFinLegal, **program committee member**.
 1. IJCAI 2024, FinNLP-AgentScen Workshop, **shared task organizer** of the Financial Challenges in Large Language Models.
-
-### Year 2023 ###
-1. **Internship**: Data Research Group, Beijing Academy of Artificial Intelligence.
+1. **Internship (2023-2024)**: Data Research Group, Beijing Academy of Artificial Intelligence.
    <br>
    work on data analysis for alignment of large language models, under the supervision of [Dr. Zheng Zhang](https://openreview.net/profile?id=~Zheng_Zhang12).
+
 
 Vistors of this Site
 ======
