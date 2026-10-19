@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Welcome to my homepage! I am Duanyu Feng (冯端宇), a PhD student at the School of Computer Science, Sichuan University, under the supervision of [Prof. Wenqiang Lei](https://sites.google.com/view/wenqianghome/home).
+Welcome to my homepage! I am Duanyu Feng (冯端宇), a PhD student at the School of Computer Science, Sichuan University, under the supervision of [Prof. Wenqiang Lei](https://cs.scu.edu.cn/info/1282/17597.htm).
 
 My research delves into the theoretical foundations of deep learning and machine learning. Furthermore, I'm exploring how tools from numerical optimization and natural language processing can be used to create a more reliable and robust scientific algorithm for addressing social issues.
 
@@ -20,7 +20,7 @@ Specifically, my research lies in the span of the following topics:
 
 Bio
 ======
-Sep. 2023 - Present: Ph.D at School of Computer Science, Sichuan University, supervised by [Prof. Wenqiang Lei](https://sites.google.com/view/wenqianghome/home).
+Sep. 2023 - Present: Ph.D at School of Computer Science, Sichuan University, supervised by [Prof. Wenqiang Lei](https://cs.scu.edu.cn/info/1282/17597.htm).
 
 Sep. 2020 - Jun. 2023: M.S at School of Mathematics, Sichuan University, supervised by [Prof. Bing Hu](https://math.scu.edu.cn/info/1252/2507.htm) (with [Prof. Hao Wang](https://math.scu.edu.cn/info/1252/2489.htm) and [Prof. Shiquan Zhang](https://math.scu.edu.cn/info/1252/2525.htm)). 
 
