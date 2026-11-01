@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    #duanyu-folio{--folio-bg:light-dark(#f5f5f5,#1c1c1d);--folio-surface:light-dark(#ffffff,#252526);--folio-text:light-dark(#000000,#e9e9e9);--folio-muted:light-dark(#555555,#bcbcbc);--folio-primary:light-dark(#b509ac,#ef8ce6);--folio-rule:light-dark(#e5e5e5,#424242);--folio-shadow:light-dark(#00000026,#00000065);--folio-tag:#b509ac;--folio-tag-text:#ffffff;color:var(--folio-text);background:var(--folio-bg);font-family:Roboto,Arial,'PingFang SC','Microsoft YaHei',sans-serif;font-size:16px;font-weight:300;line-height:1.5;min-width:0}
+    #duanyu-folio *{box-sizing:border-box;min-width:0}
+    #duanyu-folio [hidden]{display:none!important}
+    #duanyu-folio a{color:var(--folio-primary);text-decoration:none;overflow-wrap:anywhere}
+    #duanyu-folio a:hover{text-decoration:underline}
+    #duanyu-folio button{font-family:inherit;font-weight:inherit;line-height:inherit}
+    #duanyu-folio strong{font-weight:700}
+    #duanyu-folio .fl-nav-shell{border-bottom:1px solid var(--folio-rule);background:var(--folio-bg)}
+    #duanyu-folio .fl-nav-inner{max-width:810px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+    #duanyu-folio .fl-brand{color:var(--folio-text);font-size:20px;margin-right:auto;font-weight:300}
+    #duanyu-folio[data-page="about"] .fl-brand{visibility:hidden}
+    #duanyu-folio .fl-nav{display:flex;align-items:center;gap:19px;flex-wrap:wrap;margin-left:auto}
+    #duanyu-folio .fl-nav button,#duanyu-folio .fl-nav>a{border:0;background:transparent;padding:0;color:var(--folio-text);font-size:15px}
+    #duanyu-folio .fl-nav [aria-current="page"]{color:var(--folio-primary);font-weight:400}
+    #duanyu-folio .fl-main{max-width:810px;margin:0 auto;padding:42px 20px 25px;background:var(--folio-bg)}
+    #duanyu-folio h1{font-size:40px;line-height:1.2;font-weight:300;margin:0 0 11px;letter-spacing:normal}
+    #duanyu-folio h1 .fl-cn{font-size:20px;font-weight:300;margin-left:10px;display:inline-block}
+    #duanyu-folio h2{font-size:32px;line-height:1.2;font-weight:300;margin:25px 0 19px;clear:both}
+    #duanyu-folio h3{font-size:22px;line-height:1.35;font-weight:300;margin:0 0 18px}
+    #duanyu-folio p{margin:0 0 16px}
+    #duanyu-folio .fl-profile{float:right;width:20%;margin:0 0 19px 30px}
+    #duanyu-folio .fl-profile img{display:block;width:100%;height:auto;border-radius:3px;box-shadow:0 1px 5px var(--folio-shadow)}
+    #duanyu-folio .fl-subtitle{font-size:16px;margin:0 0 18px}
+    #duanyu-folio .fl-bio:after{content:'';display:block;clear:both}
+    #duanyu-folio .fl-inline-links{font-size:15px;display:flex;gap:17px;flex-wrap:wrap;margin:5px 0 22px}
+    #duanyu-folio .fl-experience-list{list-style:none;margin:0 0 25px;padding:0}
+    #duanyu-folio .fl-experience-list li{display:grid;grid-template-columns:115px 1fr;gap:18px;margin-bottom:12px}
+    #duanyu-folio .fl-date{font-size:14px;font-weight:400;font-variant-numeric:tabular-nums}
+    #duanyu-folio .fl-small{font-size:14px;color:var(--folio-muted)}
+    #duanyu-folio .fl-papers{list-style:none;margin:0;padding:0}
+    #duanyu-folio .fl-paper{display:grid;grid-template-columns:101px 1fr;gap:30px;margin:0 0 25px}
+    #duanyu-folio .fl-abbr{display:block;text-align:center;background:var(--folio-tag);color:var(--folio-tag-text);font-size:12px;font-weight:700;line-height:19px;min-height:19px;max-width:101px;margin-top:3px;border-radius:2px;box-shadow:0 1px 4px var(--folio-shadow);padding:0 6px}
+    #duanyu-folio .fl-paper-title{font-weight:500;font-size:16px;line-height:1.5;display:block;color:var(--folio-text)}
+    #duanyu-folio .fl-authors{font-size:15px;line-height:1.5;margin-top:3px}
+    #duanyu-folio .fl-authors .fl-self{text-decoration:underline;text-underline-offset:3px}
+    #duanyu-folio .fl-venue{font-size:15px;font-style:italic;margin:2px 0 7px}
+    #duanyu-folio .fl-paper-links{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    #duanyu-folio .fl-paper-links a,#duanyu-folio .fl-outline{display:inline-block;font-size:12px;font-weight:400;line-height:1.4;padding:2px 11px;border:1px solid var(--folio-text);border-radius:2px;color:var(--folio-text);background:transparent}
+    #duanyu-folio .fl-paper-links a:hover,#duanyu-folio .fl-outline:hover{background:var(--folio-primary);color:var(--folio-bg);border-color:var(--folio-primary);text-decoration:none}
+    #duanyu-folio .fl-full-link{font-size:15px;color:var(--folio-primary);border:0;padding:0;background:transparent}
+    #duanyu-folio .fl-description{font-size:15px;margin:0 0 26px;color:var(--folio-muted)}
+    #duanyu-folio .fl-year{font-size:22px;margin:25px 0 18px;font-weight:300;color:var(--folio-muted)}
+    #duanyu-folio .fl-cv-block,#duanyu-folio .fl-content-block{padding:18px 20px;margin-bottom:20px;border:1px solid var(--folio-rule);border-radius:3px;box-shadow:0 2px 5px var(--folio-shadow);background:var(--folio-surface)}
+    #duanyu-folio .fl-cv-row{display:grid;grid-template-columns:125px 1fr;gap:25px;padding:4px 0 20px;margin:0 0 16px;border-bottom:1px solid var(--folio-rule)}
+    #duanyu-folio .fl-cv-row:last-child{margin:0;padding-bottom:0;border:0}
+    #duanyu-folio .fl-cv-row h4{font-size:16px;font-weight:500;margin:0 0 3px}
+    #duanyu-folio .fl-cv-row p{font-size:15px;margin:0 0 4px}
+    #duanyu-folio .fl-cv-row .fl-date{color:var(--folio-primary);font-size:13px;font-weight:500}
+    #duanyu-folio .fl-cv-row ul{margin:8px 0 0;padding-left:19px;font-size:15px}
+    #duanyu-folio .fl-services{padding-left:22px;margin:0 0 24px}
+    #duanyu-folio .fl-services li{margin-bottom:12px}
+    #duanyu-folio .fl-footer{border-top:1px solid var(--folio-rule);font-size:12px;color:var(--folio-muted);text-align:center;padding:13px 20px 16px;background:var(--folio-bg)}
+    #duanyu-folio .fl-author-link{color:var(--folio-text)}
+    #duanyu-folio .fl-author-link:hover{color:var(--folio-primary)}
+    #duanyu-folio .fl-role{font-size:14px;font-weight:500;margin:4px 0 3px}
+    #duanyu-folio .fl-context{font-size:14px;color:var(--folio-muted);line-height:1.5;margin:3px 0 8px}
+    #duanyu-folio .fl-legend{font-size:13px;color:var(--folio-muted);margin:5px 0 18px}
+    #duanyu-folio .fl-categories{display:flex;gap:7px 17px;flex-wrap:wrap;margin:0 0 20px;font-size:14px}
+    #duanyu-folio .fl-category h2{font-size:28px;margin:30px 0 21px;scroll-margin-top:20px}
+    #duanyu-folio .fl-content-block>h2{font-size:24px;line-height:1.35;margin:0 0 20px;scroll-margin-top:20px}
+    #duanyu-folio .fl-content-block .fl-paper:last-child{margin-bottom:0}
+    #duanyu-folio .fl-content-block>.fl-full-link{margin-top:17px}
+    #duanyu-folio .fl-content-block .fl-experience-list{margin-bottom:0}
+    #duanyu-folio .fl-about-profile .fl-inline-links{margin-bottom:0}
+    #duanyu-folio .fl-visitor.fl-content-block{margin-top:0}
+    #duanyu-folio .fl-authors-toggle{font-size:13px;margin:2px 0 3px}
+    #duanyu-folio .fl-authors-toggle summary{display:inline;color:var(--folio-primary);text-decoration:underline;text-underline-offset:3px;list-style:none}
+    #duanyu-folio .fl-authors-toggle summary::-webkit-details-marker{display:none}
+    #duanyu-folio .fl-authors-toggle[open] summary{display:block;margin:5px 0}
+    #duanyu-folio .fl-author-full{font-size:14px;line-height:1.5;padding:6px 0}
+    #duanyu-folio .fl-note{font-size:14px;margin:6px 0 9px;padding-left:10px;border-left:2px solid var(--folio-rule);color:var(--folio-text)}
+    #duanyu-folio .fl-paper-links a,#duanyu-folio .fl-paper-links .fl-citation{display:inline-flex;align-items:center;justify-content:center;min-height:36px;min-width:78px;font-size:13px;font-weight:400;line-height:1.4;padding:6px 14px;border:1px solid var(--folio-text);border-radius:2px;background:transparent;color:var(--folio-text)}
+    #duanyu-folio .fl-paper-links .fl-citation{min-width:132px}
+    #duanyu-folio .fl-paper-links .fl-citation:disabled{color:var(--folio-muted);border-color:var(--folio-rule)}
+    #duanyu-folio .fl-paper-links a:hover{background:var(--folio-primary);color:var(--folio-surface);border-color:var(--folio-primary);text-decoration:none}
+    #duanyu-folio .fl-visitor{margin-top:32px}
+    #duanyu-folio .fl-visitor-map{position:relative;display:block;overflow:hidden;width:100%;aspect-ratio:1164/619;background:var(--folio-surface)}
+    #duanyu-folio .fl-visitor-map img{position:absolute;display:block;max-width:none;width:106.3574%;height:auto;left:-4.3814%;top:-12.9241%}
+    #duanyu-folio .fl-visitor-caption{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--folio-muted);margin-top:7px}
+    @media(max-width:850px){#duanyu-folio .fl-nav-inner{padding-right:20px;gap:7px}#duanyu-folio .fl-brand{font-size:16px}#duanyu-folio .fl-nav{gap:12px}#duanyu-folio .fl-nav button,#duanyu-folio .fl-nav>a{font-size:14px}}
+    @media(max-width:540px){#duanyu-folio .fl-nav-inner{padding-top:13px;padding-bottom:13px}#duanyu-folio .fl-brand{display:none}#duanyu-folio .fl-nav{margin-left:0;gap:14px}#duanyu-folio .fl-main{padding-top:28px}#duanyu-folio h1{font-size:35px}#duanyu-folio h1 .fl-cn{font-size:18px;margin-left:5px}#duanyu-folio h2{font-size:28px}#duanyu-folio .fl-profile{width:29%;margin-left:18px}#duanyu-folio .fl-paper{grid-template-columns:65px 1fr;gap:16px}#duanyu-folio .fl-abbr{font-size:11px;line-height:18px;padding:0 4px}#duanyu-folio .fl-experience-list li{grid-template-columns:85px 1fr;gap:13px}#duanyu-folio .fl-cv-block,#duanyu-folio .fl-content-block{padding:15px 14px}#duanyu-folio .fl-cv-row{grid-template-columns:1fr;gap:6px}#duanyu-folio .fl-date{font-size:13px}}
+    @media(pointer:coarse){#duanyu-folio .fl-nav button,#duanyu-folio .fl-inline-links a,#duanyu-folio .fl-paper-links a,#duanyu-folio .fl-full-link{min-height:44px;align-content:center}#duanyu-folio .fl-nav{gap:5px 16px}}
+  
+html,body{margin:0;min-height:100%;background:light-dark(#f5f5f5,#1c1c1d)}
+#duanyu-folio{min-height:100vh}
+#duanyu-folio .fl-nav a{white-space:nowrap}
+#duanyu-folio .fl-cv-row a{overflow-wrap:anywhere}
+#duanyu-folio .fl-content-block p:last-child{margin-bottom:0}
+#duanyu-folio .fl-context p{margin:0 0 8px}
+#duanyu-folio .fl-context p:last-child{margin-bottom:0}
+#duanyu-folio .fl-visitor-embed{max-width:100%;overflow:hidden}
+#duanyu-folio .fl-visitor-embed iframe,#duanyu-folio .fl-visitor-embed img{max-width:100%}
+#duanyu-folio .fl-paper-single .fl-paper{grid-template-columns:1fr}
+#duanyu-folio .fl-paper-single .fl-paper>div:first-child{display:none}
+#duanyu-folio .fl-paper-single .fl-paper-title{font-size:24px}
+#duanyu-folio a:focus-visible,#duanyu-folio button:focus-visible,#duanyu-folio summary:focus-visible{outline:2px solid var(--folio-primary);outline-offset:4px}

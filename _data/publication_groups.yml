@@ -1,0 +1,15 @@
+- key: llm
+  title: LLM alignment & representations
+  short: LLM alignment
+- key: graph
+  title: Graph & causal learning
+  short: Graph learning
+- key: science
+  title: AI for science
+  short: AI for science
+- key: data
+  title: Data synthesis & domain applications
+  short: Data & domain applications
+- key: vision
+  title: Vision–language evaluation
+  short: Vision–language

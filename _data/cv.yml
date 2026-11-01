@@ -1,0 +1,45 @@
+education:
+- period: 2023.09 – PRESENT
+  degree: Ph.D. · Computer Science
+  institution: Sichuan University
+  department: School of Computer Science
+  advisors:
+  - label: Advisor
+    name: Wenqiang Lei
+- period: 2020.09 – 2023.06
+  degree: M.S. · Mathematics
+  institution: Sichuan University
+  department: School of Mathematics
+  advisors:
+  - label: Advisor
+    name: Bing Hu
+  - label: With
+    name: Hao Wang
+  - label: With
+    name: Shiquan Zhang
+- period: 2016.09 – 2020.06
+  degree: B.S. · Mathematics
+  institution: Sichuan University
+  department: School of Mathematics
+  advisors:
+  - label: Advisor
+    name: Hao Wang
+research_experience:
+- period: 2025 – PRESENT
+  role: Exchange student
+  institution: National University of Singapore
+  short_institution: NUS · Cancer Science Institute of Singapore
+  department: Cancer Science Institute of Singapore
+  focus: RNA language modeling and structure prediction
+  advisor:
+    label: Advisor
+    name: Yang Li
+- period: 2023 – 2024
+  role: Research intern
+  institution: Beijing Academy of Artificial Intelligence
+  short_institution: Beijing Academy of Artificial Intelligence
+  department: Data Research Group
+  focus: Preference data construction, quality filtering, and safety alignment
+  advisor:
+    label: Supervisor
+    name: Zheng Zhang

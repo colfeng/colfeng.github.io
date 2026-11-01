@@ -10,3 +10,8 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Local preview and Python cache
+.openai/
+__pycache__/
+*.pyc

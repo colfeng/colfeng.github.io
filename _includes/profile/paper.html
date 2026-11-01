@@ -1,0 +1,22 @@
+{% assign paper = include.paper %}
+<li class="fl-paper" data-paper-key="{{ paper.key }}">
+  <div><span class="fl-abbr">{{ paper.abbr | escape }}</span></div>
+  <div>
+    <a class="fl-paper-title" href="{{ paper.paper_url | escape }}" target="_blank" rel="noopener noreferrer">{{ paper.title | escape }}</a>
+    <div class="fl-authors">
+      {% if paper.authors.size > 8 %}
+        {% assign visible_authors = paper.authors | slice: 0, 3 %}
+        {% for author in visible_authors %}{% unless forloop.first %}, {% endunless %}{% include profile/person.html name=author paper=paper %}{% endfor %}{% unless visible_authors contains site.data.profile.name %}, …, {% include profile/person.html name=site.data.profile.name paper=paper %}{% endunless %}, et al.
+        <details class="fl-authors-toggle"><summary>Full author list</summary><div class="fl-author-full">{% for author in paper.authors %}{% unless forloop.first %}, {% endunless %}{% include profile/person.html name=author paper=paper %}{% endfor %}</div></details>
+      {% else %}
+        {% for author in paper.authors %}{% unless forloop.first %}, {% endunless %}{% include profile/person.html name=author paper=paper %}{% endfor %}
+      {% endif %}
+    </div>
+    <div class="fl-venue">{{ paper.venue | escape }}</div>
+    {% if paper.role %}<div class="fl-role">{{ paper.role | escape }}</div>{% endif %}
+    {% if paper.contribution %}<p class="fl-context">{{ paper.contribution | escape }}</p>{% endif %}
+    <div class="fl-context">{{ paper.content | markdownify }}</div>
+    {% if paper.note %}<p class="fl-note">Personal note: {{ paper.note | escape }}</p>{% endif %}
+    {% include profile/paper-links.html paper=paper %}
+  </div>
+</li>

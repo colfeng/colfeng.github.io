@@ -1,0 +1,20 @@
+- heading: Area Chair
+  entries:
+  - period: '2026.01'
+    title: ACL Rolling Review
+    description: January cycle
+  - period: '2025.05'
+    title: ACL Rolling Review
+    description: May cycle
+- heading: Program Committee
+  entries:
+  - period: '2025'
+    title: Program Committee Member
+    description: The Joint Workshop of FinNLP, FNP, and LLMFinLegal
+    venue: COLING 2025
+- heading: Shared Task Organization
+  entries:
+  - period: '2024'
+    title: Shared Task Organizer
+    description: Financial Challenges in Large Language Models
+    venue: FinNLP-AgentScen Workshop · IJCAI 2024

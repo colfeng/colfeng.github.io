@@ -1,0 +1,11 @@
+{% assign linked_paper = include.paper %}
+<div class="fl-paper-links">
+  <a href="{{ linked_paper.paper_url | escape }}" target="_blank" rel="noopener noreferrer">PAPER</a>
+  {% assign citation = site.data.citations.papers[linked_paper.key] %}
+  {% if citation and citation.count != nil and citation.url %}
+    <a class="fl-citation" href="{{ citation.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ citation.count }} Google Scholar citations"{% if citation.updated_at %} title="Google Scholar · Updated {{ citation.updated_at }}"{% endif %}>CITED BY {{ citation.count }}</a>
+  {% else %}
+    <button class="fl-citation" type="button" disabled aria-label="Google Scholar citation count unavailable">CITED BY —</button>
+  {% endif %}
+  {% for resource in linked_paper.resources %}<a href="{{ resource.url | escape }}" target="_blank" rel="noopener noreferrer">{{ resource.label | escape }}</a>{% endfor %}
+</div>
