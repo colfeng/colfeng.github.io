@@ -1,0 +1,12 @@
+- label: about
+  key: about
+  url: /
+- label: publications
+  key: publications
+  url: /publications/
+- label: cv
+  key: cv
+  url: /cv/
+- label: services
+  key: services
+  url: /services/

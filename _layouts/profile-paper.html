@@ -1,0 +1,14 @@
+---
+layout: profile
+---
+<section class="fl-content-block fl-paper-single">
+  <p class="fl-description"><a href="{{ '/publications/' | relative_url }}">← Publications</a></p>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="fl-venue">{{ page.venue | escape }}</p>
+  <div class="fl-authors">{% for author in page.authors %}{% unless forloop.first %}, {% endunless %}{% include profile/person.html name=author paper=page %}{% endfor %}</div>
+  {% if page.role %}<p class="fl-role">{{ page.role }}</p>{% endif %}
+  {% if page.contribution %}<p>{{ page.contribution }}</p>{% endif %}
+  {{ content }}
+  {% if page.note %}<p class="fl-note">Personal note: {{ page.note }}</p>{% endif %}
+  {% include profile/paper-links.html paper=page %}
+</section>

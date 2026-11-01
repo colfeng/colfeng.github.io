@@ -1,0 +1,28 @@
+---
+layout: profile
+---
+<section class="fl-content-block fl-about-profile" aria-label="About">
+  <h1><strong>Duanyu</strong> Feng <span class="fl-cn">{{ site.data.profile.name_zh }}</span></h1>
+  <figure class="fl-profile"><img src="{{ site.data.profile.avatar | relative_url }}" alt="Duanyu Feng" width="166"></figure>
+  <div class="fl-bio">
+    <p class="fl-subtitle"><a href="{{ site.data.profile.institution_url }}" target="_blank" rel="noopener noreferrer">{{ site.data.profile.institution }} · {{ site.data.profile.department }}</a></p>
+    {{ content }}
+  </div>
+  <div class="fl-inline-links"><a href="mailto:{{ site.data.profile.email }}">Email</a><a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noopener noreferrer">Google Scholar</a><a href="{{ site.data.profile.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a><a href="{{ site.data.profile.orcid_url }}" target="_blank" rel="noopener noreferrer">ORCID</a></div>
+</section>
+<section class="fl-content-block" aria-label="Research experience">
+  <h2>research experience</h2>
+  <ul class="fl-experience-list">{% for experience in site.data.cv.research_experience %}<li><span class="fl-date">{{ experience.period }}</span><div><strong>{{ experience.short_institution }}</strong><br>{{ experience.role }} · {{ experience.focus }}</div></li>{% endfor %}</ul>
+</section>
+<section class="fl-content-block" aria-label="Selected publications">
+  <h2>selected publications</h2>
+  <p class="fl-legend">* Equal contribution · † Corresponding author</p>
+  <ol class="fl-papers">{% for key in site.data.profile.selected_papers %}{% assign selected_paper = site.publications | where: 'key', key | first %}{% if selected_paper %}{% include profile/paper.html paper=selected_paper %}{% endif %}{% endfor %}</ol>
+  <a class="fl-full-link" href="{{ '/publications/' | relative_url }}">View publications by research area →</a>
+</section>
+<section class="fl-visitor fl-content-block" aria-label="Visitor statistics">
+  <h2>visitors of this site</h2>
+  <div class="fl-visitor-embed"><script type="text/javascript" id="mapmyvisitors" src="{{ site.data.profile.visitor_script_url }}"></script></div>
+  <noscript><p><a href="{{ site.data.profile.visitor_statistics_url }}">View visitor map and statistics</a></p></noscript>
+  <div class="fl-visitor-caption"><a href="{{ site.data.profile.visitor_statistics_url }}" target="_blank" rel="noopener noreferrer">Visitor statistics</a></div>
+</section>

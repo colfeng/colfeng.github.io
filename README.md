@@ -1,4 +1,19 @@
-# Academic Pages
+# Duanyu Feng's academic homepage
+
+Website: https://colfeng.github.io/
+
+**[修改文字、添加论文、调整颜色与回退版本：SITE_EDITING.md](SITE_EDITING.md)**
+
+- About: `_pages/about.md`
+- Publications: one Markdown file per paper in `_publications/`
+- CV and shared research experience: `_data/cv.yml`
+- Academic service: `_data/services.yml`
+- Contact, selected papers and visitor widget: `_data/profile.yml`
+- Colors and typography: `assets/css/profile.css`
+
+Content is rendered with Jekyll on GitHub Pages. The citation workflow refreshes a Google Scholar cache daily; failed requests retain the last successful data.
+
+## Original template: Academic Pages
 
 ![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 

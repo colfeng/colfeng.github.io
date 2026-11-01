@@ -1,36 +1,16 @@
 ---
-layout: archive
-title: "Publications"
+layout: profile
+title: publications
 permalink: /publications/
-author_profile: true
+nav: publications
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<h1>publications</h1>
+<p class="fl-description"><a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+<nav class="fl-categories" aria-label="Publication research areas">{% for group in site.data.publication_groups %}<a href="#pubs-{{ group.key }}">{{ group.short }}</a>{% endfor %}</nav>
+<p class="fl-legend">* Equal contribution · † Corresponding author</p>
+{% if site.data.citations.last_updated %}<p class="fl-legend">Google Scholar · Updated {{ site.data.citations.last_updated | date: '%Y-%m-%d' }}</p>{% endif %}
+{% assign sorted_papers = site.publications | sort: 'sort_order' %}
+{% for group in site.data.publication_groups %}
+  {% assign group_papers = sorted_papers | where: 'category', group.key %}
+  {% if group_papers.size > 0 %}<section class="fl-category fl-content-block" aria-label="{{ group.title | escape }}"><h2 id="pubs-{{ group.key }}">{{ group.title | escape }}</h2><ol class="fl-papers">{% for paper in group_papers %}{% include profile/paper.html paper=paper %}{% endfor %}</ol></section>{% endif %}
+{% endfor %}

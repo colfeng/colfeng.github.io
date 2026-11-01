@@ -1,64 +1,16 @@
 ---
-layout: archive
-title: "CV"
+layout: profile
+title: cv
 permalink: /cv/
-author_profile: true
+nav: cv
 redirect_from:
   - /resume
 ---
-
-{% include base_path %}
-
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
-
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+<h1>cv</h1>
+<p class="fl-description">Education and research experience</p>
+<section class="fl-cv-block" aria-label="Education"><h3>Education</h3>
+{% for education in site.data.cv.education %}<div class="fl-cv-row"><div class="fl-date">{{ education.period }}</div><div><h4>{{ education.degree }}</h4><p>{{ education.institution }}</p><p><em>{{ education.department }}</em></p><ul>{% for advisor in education.advisors %}<li>{{ advisor.label }}: {% include profile/person.html name=advisor.name prefix="Prof. " %}</li>{% endfor %}</ul></div></div>{% endfor %}
+</section>
+<section class="fl-cv-block" aria-label="Research experience"><h3>Research experience</h3>
+{% for experience in site.data.cv.research_experience %}<div class="fl-cv-row"><div class="fl-date">{{ experience.period }}</div><div><h4>{{ experience.role }}</h4><p>{{ experience.institution }}</p><p><em>{{ experience.department }}</em></p><ul><li>{{ experience.focus }}</li><li>{{ experience.advisor.label }}: {% if experience.advisor.name == 'Zheng Zhang' %}{% include profile/person.html name=experience.advisor.name prefix="Dr. " %}{% else %}{% include profile/person.html name=experience.advisor.name prefix="Prof. " %}{% endif %}</li></ul></div></div>{% endfor %}
+</section>

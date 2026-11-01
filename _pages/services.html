@@ -1,0 +1,9 @@
+---
+layout: profile
+title: services
+permalink: /services/
+nav: services
+---
+<h1>services</h1>
+<p class="fl-description">Academic service</p>
+{% for group in site.data.services %}<section class="fl-cv-block" aria-label="{{ group.heading | escape }}"><h3>{{ group.heading }}</h3>{% for entry in group.entries %}<div class="fl-cv-row"><div class="fl-date">{{ entry.period }}</div><div><h4>{{ entry.title }}</h4><p>{{ entry.description }}</p>{% if entry.venue %}<p><em>{{ entry.venue }}</em></p>{% endif %}</div></div>{% endfor %}</section>{% endfor %}
