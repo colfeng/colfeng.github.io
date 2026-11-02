@@ -1,6 +1,22 @@
 source: Google Scholar
 last_updated: '2026-11-02'
 papers:
+  amapo:
+    count: 1
+    url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aRXvKmwAAAAJ&citation_for_view=aRXvKmwAAAAJ:M3ejUd6NZC8C'
+    updated_at: '2026-11-02'
+  cecf:
+    count: 0
+    url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aRXvKmwAAAAJ&citation_for_view=aRXvKmwAAAAJ:L8Ckcad2t8MC'
+    updated_at: '2026-11-02'
+  cmim:
+    count: 0
+    url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aRXvKmwAAAAJ&citation_for_view=aRXvKmwAAAAJ:mB3voiENLucC'
+    updated_at: '2026-11-02'
+  microevo:
+    count: 0
+    url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aRXvKmwAAAAJ&citation_for_view=aRXvKmwAAAAJ:4TOpqqG69KYC'
+    updated_at: '2026-11-02'
   calm:
     count: 80
     url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5058923141749022331
