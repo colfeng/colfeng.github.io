@@ -104,6 +104,39 @@ def refreshed_cache(old: dict, papers: list[dict], rows: list[dict], timestamp: 
     return {"source": "Google Scholar", "last_updated": timestamp, "papers": cached}, matched
 
 
+def fetch_scholarly_rows(scholar_user_id: str) -> list[dict]:
+    """Read publication counts from the owner's Google Scholar profile."""
+    from scholarly import scholarly
+
+    scholarly.set_timeout(15)
+    scholarly.set_retries(2)
+    author = scholarly.search_author_id(scholar_user_id)
+    author = scholarly.fill(author, sections=["publications"])
+    results = []
+    for publication in author.get("publications", []):
+        title = (publication.get("bib") or {}).get("title")
+        count = publication.get("num_citations")
+        pub_id = publication.get("pub_id") or publication.get("author_pub_id")
+        if not isinstance(title, str) or type(count) is not int or count < 0:
+            continue
+        if not isinstance(pub_id, str):
+            continue
+        article_id = pub_id.rsplit(":", 1)[-1]
+        if not re.fullmatch(r"[A-Za-z0-9_-]+", article_id):
+            continue
+        full_id = f"{scholar_user_id}:{article_id}"
+        url = "https://scholar.google.com/citations?" + urlencode({
+            "view_op": "view_citation", "hl": "en",
+            "user": scholar_user_id, "citation_for_view": full_id,
+        })
+        results.append({
+            "title": title, "scholar_id": full_id, "count": count, "url": url,
+        })
+    if not results:
+        raise ValueError("No usable Google Scholar publication counts from scholarly.")
+    return results
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--fixture", type=Path, help="Read a saved Scholar HTML response for validation")
@@ -114,15 +147,21 @@ def main() -> int:
     old = yaml.safe_load(cache_path.read_text(encoding="utf-8")) or {}
     papers = [front_matter(path) for path in sorted((ROOT / "_publications").glob("*.md"))]
     if args.fixture:
-        html = args.fixture.read_text(encoding="utf-8")
+        rows = parsed_rows(args.fixture.read_text(encoding="utf-8"))
     else:
-        query = urlencode({"user": profile["scholar_user_id"], "hl": "en", "cstart": 0, "pagesize": 100})
-        request = Request("https://scholar.google.com/citations?" + query,
-                          headers={"User-Agent": "Academic-Homepage-Citations/1.0", "Accept-Language": "en"})
-        with urlopen(request, timeout=30) as response:
-            html = response.read().decode("utf-8")
+        try:
+            rows = fetch_scholarly_rows(profile["scholar_user_id"])
+            print(f"scholarly retrieved {len(rows)} Google Scholar records.")
+        except Exception as scholar_error:
+            print(f"scholarly could not read Google Scholar: {scholar_error}", file=sys.stderr)
+            print("Trying the original Google Scholar HTML parser.", file=sys.stderr)
+            query = urlencode({"user": profile["scholar_user_id"], "hl": "en", "cstart": 0, "pagesize": 100})
+            request = Request("https://scholar.google.com/citations?" + query,
+                              headers={"User-Agent": "Academic-Homepage-Citations/1.0", "Accept-Language": "en"})
+            with urlopen(request, timeout=30) as response:
+                rows = parsed_rows(response.read().decode("utf-8"))
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    new, matched = refreshed_cache(old, papers, parsed_rows(html), timestamp)
+    new, matched = refreshed_cache(old, papers, rows, timestamp)
     if not args.dry_run:
         # Write beside the cache, then replace atomically only after full validation.
         with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=cache_path.parent, delete=False) as tmp:
