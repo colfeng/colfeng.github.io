@@ -159,7 +159,7 @@ def main() -> int:
             request = Request("https://scholar.google.com/citations?" + query,
                               headers={"User-Agent": "Academic-Homepage-Citations/1.0", "Accept-Language": "en"})
             with urlopen(request, timeout=30) as response:
-                rows = parsed_rows(response.read().decode("utf-8"))
+                rows = parsed_rows(response.read().decode("utf-8", errors="replace"))
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     new, matched = refreshed_cache(old, papers, rows, timestamp)
     if not args.dry_run:
