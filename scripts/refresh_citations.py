@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import argparse
+import json
+import os
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -104,6 +106,70 @@ def refreshed_cache(old: dict, papers: list[dict], rows: list[dict], timestamp: 
     return {"source": "Google Scholar", "last_updated": timestamp, "papers": cached}, matched
 
 
+def fetch_serpapi_rows(scholar_user_id: str, api_key: str) -> list[dict]:
+    """Get Google Scholar author citation counts through SerpApi.
+
+    Counts are from Google Scholar, not SerpApi's own bibliometric index.
+    """
+    rows = []
+    for start in range(0, 300, 100):
+        params = urlencode({
+            "engine": "google_scholar_author",
+            "author_id": scholar_user_id,
+            "hl": "en",
+            "num": 100,
+            "start": start,
+            "api_key": api_key,
+        })
+        request = Request(
+            "https://serpapi.com/search.json?" + params,
+            headers={"Accept": "application/json"},
+        )
+        with urlopen(request, timeout=45) as response:
+            data = json.load(response)
+        if not isinstance(data, dict):
+            raise ValueError("Invalid SerpApi Google Scholar response.")
+        if data.get("error"):
+            raise ValueError("SerpApi Google Scholar error: " + str(data["error"]))
+        articles = data.get("articles") or []
+        if not isinstance(articles, list):
+            raise ValueError("Invalid Google Scholar article list.")
+        for article in articles:
+            if not isinstance(article, dict):
+                continue
+            scholar_id = article.get("citation_id")
+            title = article.get("title")
+            cited_by = article.get("cited_by") or {}
+            count = cited_by.get("value") if isinstance(cited_by, dict) else None
+            if not (isinstance(scholar_id, str)
+                    and scholar_id.startswith(scholar_user_id + ":")
+                    and re.fullmatch(r"[A-Za-z0-9_-]+", scholar_id.split(":", 1)[1])
+                    and isinstance(title, str)
+                    and type(count) is int and count >= 0):
+                continue
+            citation_url = cited_by.get("link") or article.get("link")
+            if not isinstance(citation_url, str) or (
+                urlparse(citation_url).scheme != "https"
+                or urlparse(citation_url).netloc != "scholar.google.com"
+            ):
+                citation_url = "https://scholar.google.com/citations?" + urlencode({
+                    "view_op": "view_citation",
+                    "user": scholar_user_id,
+                    "citation_for_view": scholar_id,
+                })
+            rows.append({
+                "title": title,
+                "scholar_id": scholar_id,
+                "count": count,
+                "url": citation_url,
+            })
+        if len(articles) < 100:
+            break
+    if not rows:
+        raise ValueError("SerpApi returned no verified Google Scholar citation counts.")
+    return rows
+
+
 def fetch_scholarly_rows(scholar_user_id: str) -> list[dict]:
     """Read publication counts from the owner's Google Scholar profile."""
     from scholarly import scholarly
@@ -149,17 +215,26 @@ def main() -> int:
     if args.fixture:
         rows = parsed_rows(args.fixture.read_text(encoding="utf-8"))
     else:
-        try:
-            rows = fetch_scholarly_rows(profile["scholar_user_id"])
-            print(f"scholarly retrieved {len(rows)} Google Scholar records.")
-        except Exception as scholar_error:
-            print(f"scholarly could not read Google Scholar: {scholar_error}", file=sys.stderr)
-            print("Trying the original Google Scholar HTML parser.", file=sys.stderr)
-            query = urlencode({"user": profile["scholar_user_id"], "hl": "en", "cstart": 0, "pagesize": 100})
-            request = Request("https://scholar.google.com/citations?" + query,
-                              headers={"User-Agent": "Academic-Homepage-Citations/1.0", "Accept-Language": "en"})
-            with urlopen(request, timeout=30) as response:
-                rows = parsed_rows(response.read().decode("utf-8", errors="replace"))
+        rows = None
+        api_key = os.environ.get("SERPAPI_KEY", "").strip()
+        if api_key:
+            try:
+                rows = fetch_serpapi_rows(profile["scholar_user_id"], api_key)
+                print(f"SerpApi retrieved {len(rows)} Google Scholar records.")
+            except Exception as api_error:
+                print(f"SerpApi Google Scholar request failed: {api_error}", file=sys.stderr)
+        if rows is None:
+            try:
+                rows = fetch_scholarly_rows(profile["scholar_user_id"])
+                print(f"scholarly retrieved {len(rows)} Google Scholar records.")
+            except Exception as scholar_error:
+                print(f"scholarly could not read Google Scholar: {scholar_error}", file=sys.stderr)
+                print("Trying the original Google Scholar HTML parser.", file=sys.stderr)
+                query = urlencode({"user": profile["scholar_user_id"], "hl": "en", "cstart": 0, "pagesize": 100})
+                request = Request("https://scholar.google.com/citations?" + query,
+                                  headers={"User-Agent": "Academic-Homepage-Citations/1.0", "Accept-Language": "en"})
+                with urlopen(request, timeout=30) as response:
+                    rows = parsed_rows(response.read().decode("utf-8", errors="replace"))
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     new, matched = refreshed_cache(old, papers, rows, timestamp)
     if not args.dry_run:
