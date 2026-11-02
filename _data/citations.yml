@@ -1,3 +1,47 @@
 source: Google Scholar
-last_updated: null
-papers: {}
+last_updated: '2026-11-02'
+papers:
+  calm:
+    count: 80
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5058923141749022331
+    updated_at: '2026-11-02'
+  certifies:
+    count: 3
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6448597331882716260
+    updated_at: '2026-11-02'
+  dolares:
+    count: 37
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13315984218610521181,7771931182216593930
+    updated_at: '2026-11-02'
+  dpo:
+    count: 88
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9576119268847143036,7928209509681194506
+    updated_at: '2026-11-02'
+  drfold2:
+    count: 27
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8907240075859391399,3399570628179502570
+    updated_at: '2026-11-02'
+  finben:
+    count: 501
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8573480348950711440,11769109775775449365
+    updated_at: '2026-11-02'
+  harmonic:
+    count: 72
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11330644948454737145
+    updated_at: '2026-11-02'
+  laiw:
+    count: 107
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2559623203202365570,2985199480664934518
+    updated_at: '2026-11-02'
+  legend:
+    count: 8
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12204354049396548261
+    updated_at: '2026-11-02'
+  platonic:
+    count: 15
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11356437763294640684
+    updated_at: '2026-11-02'
+  ucl:
+    count: 6
+    url: https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13629173391411824123
+    updated_at: '2026-11-02'
