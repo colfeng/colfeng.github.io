@@ -15,16 +15,16 @@ concurrency:
 
 jobs:
   refresh:
-    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    if: github.event_name == 'workflow_dispatch' || github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ github.event.repository.default_branch }}
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - run: python -m pip install --disable-pip-version-check PyYAML
+      - run: python -m pip install --disable-pip-version-check PyYAML scholarly
       - name: Refresh validated citation cache
         run: python scripts/refresh_citations.py
       - name: Validate content
@@ -32,7 +32,7 @@ jobs:
       - name: Commit updated cache
         id: cache
         env:
-          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+          TARGET_BRANCH: ${{ github.ref_name }}
         shell: bash
         run: |
           set -euo pipefail
@@ -47,7 +47,7 @@ jobs:
           git push origin "HEAD:$TARGET_BRANCH"
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Request published Pages rebuild
-        if: steps.cache.outputs.changed == 'true'
+        if: steps.cache.outputs.changed == 'true' && github.ref_name == github.event.repository.default_branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
